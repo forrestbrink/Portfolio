@@ -19,9 +19,9 @@ namespace Portfolio.Controllers
         [HttpPost]
         public ActionResult Index(Models.Contact contacts)
         {
-            Models.PortfolioEntities db = new Models.PortfolioEntities();
-            db.Contacts.Add(contacts);
-            db.SaveChanges();
+            //Models.PortfolioEntities db = new Models.PortfolioEntities();
+            //db.Contacts.Add(contacts);
+            //db.SaveChanges();
             return RedirectToAction("Thankyou", "Contact");
         }
 
