@@ -225,6 +225,7 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Careers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
