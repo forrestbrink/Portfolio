@@ -8,8 +8,50 @@
 header, footer, nav, section {
     display: block;
 }
-
-
+.boxes {
+    display:inline;
+}
+.div2 {
+    display:inline-block;
+    border:10px solid black;
+    width: 30%;
+   
+ 
+}
+.div3 {
+     display:inline-block;
+    border:10px solid black;
+    width: 33%;
+}
+.div4 {
+     display:inline-block;
+   border:10px solid black;
+   width: 31%;
+}
+.img1 {
+     display:inline-block;
+   border:10px solid black;
+   width: 35%;
+   margin-right: 250px;
+   margin-right: 150px;
+}
+.img2 {
+     display:inline-block;
+   border:10px solid black;
+   width: 35%;
+}
+.img3 {
+     display:inline-block;
+   border:10px solid black;
+   width: 35%;
+    margin-right: 250px;
+   margin-right: 150px;
+}
+.img4 {
+     display:inline-block;
+   border:10px solid black;
+   width: 35%;
+}
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
