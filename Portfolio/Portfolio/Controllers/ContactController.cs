@@ -10,22 +10,8 @@ namespace Portfolio.Controllers
     {
         //
         // GET: /Contact/
-        [HttpGet]
+      
         public ActionResult Index()
-        {
-            return View(new Models.Contact());
-        }
-
-        [HttpPost]
-        public ActionResult Index(Models.Contact contacts)
-        {
-            //Models.PortfolioEntities db = new Models.PortfolioEntities();
-            //db.Contacts.Add(contacts);
-            //db.SaveChanges();
-            return RedirectToAction("Thankyou", "Contact");
-        }
-
-        public ActionResult Thankyou()
         {
             return View();
         }
