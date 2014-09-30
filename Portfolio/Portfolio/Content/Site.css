@@ -8,25 +8,33 @@
 header, footer, nav, section {
     display: block;
 }
+.contactform {
+    border:10px solid white;
+    background-color: black;
+    color: white;
+
+}
 .boxes {
     display:inline;
+   margin-left: 15px;
+    
 }
 .div2 {
     display:inline-block;
-    border:10px solid black;
+    border:10px solid white;
     width: 30%;
    
  
 }
 .div3 {
      display:inline-block;
-    border:10px solid black;
+    border:10px solid white;
     width: 33%;
 }
 .div4 {
      display:inline-block;
-   border:10px solid black;
-   width: 31%;
+   border:10px solid white;
+   width: 30%;
 }
 .img1 {
      display:inline-block;
@@ -51,6 +59,11 @@ header, footer, nav, section {
      display:inline-block;
    border:10px solid black;
    width: 35%;
+}
+.homepage-content {
+    border:10px solid white;
+    background-color: black;
+    color: white;
 }
 
 /* Styles for basic forms
