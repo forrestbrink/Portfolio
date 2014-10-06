@@ -1,95 +1,52 @@
-﻿@model Portfolio.Models.Contact
+﻿@model jQueryPractice.Models.ContactForm
 
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
 }
-<!DOCTYPE html>
 
-<head>
-    <title>Contact Page</title>
-</head>
-<div class="contact-entire">
-<header>
-    <div class="contactheader">
-    <h1>Forrest's Page</h1>
-    <img src="http://images6.alphacoders.com/316/316963.jpg" width="1575" height="180" float="center" />
-    <nav>
-        &nbsp;||&nbsp;
-        <a href="@Url.Action("Index", "Home")">Home</a>
-        &nbsp;||&nbsp;
-        <a href="@Url.Action("Index", "About")">About</a>
-        &nbsp;||&nbsp;
-        <a href="@Url.Action("Index", "Work")">Work</a>
-        &nbsp;||&nbsp;
-        <a href="@Url.Action("Index", "Contact")">Contact</a>
-        &nbsp;||&nbsp;
-        <a href="@Url.Action("Index", "Careers")">Careers</a>
-            &nbsp;||&nbsp;
-    </nav>
-    </div>
-</header>
-<body>
-<div class="contactform">
-<h2>Contact Form</h2>
-<form action="@Url.Action("Index", "Contact")" method="post">
-    
-    <div>
+<h2>Contact</h2>
 
-        @Html.LabelFor(x => x.FirstName)
-        @Html.TextAreaFor(x => x.FirstName)
-        @Html.ValidationMessageFor(x => x.FirstName)
-    </div>
+<form id="contactForm" action="@Url.Action("Index", "Contact")" method="post">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+     <div class="back">
+        <p><a href="@Url.Action("Index", "Home")">Back To Homepage</a></p>
+            </div>
 
-    <div>
-        @Html.LabelFor(x => x.LastName)
-        @Html.TextAreaFor(x => x.LastName)
-        @Html.ValidationMessageFor(x => x.LastName)
-    </div>
+    <fieldset>
+        <legend>ContactForm</legend>
 
-    <div>
-        @Html.LabelFor(x => x.EmailAddress)
-        @Html.TextAreaFor(x => x.EmailAddress)
-        @Html.ValidationMessageFor(x => x.EmailAddress)
-    </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
 
-    <div>
-        @Html.LabelFor(x => x.ContactNumber)
-        @Html.TextAreaFor(x => x.ContactNumber)
-        @Html.ValidationMessageFor(x => x.ContactNumber)
-    </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
 
-    <div>
-        @Html.LabelFor(x => x.Comment)
-        @Html.TextAreaFor(x => x.Comment)
-        @Html.ValidationMessageFor(x => x.Comment)
-    </div>
-    </div>
-    <input type="submit" value="Submit" />
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Message)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Message)
+            @Html.ValidationMessageFor(model => model.Message)
+        </div>
+
+        <p><a href="@Url.Action("ThankYou", "Contact")">
+            <input type="submit" value="Submit" />
+            </a>
+        </p>
+    </fieldset>
 </form>
 
-
-@section Scripts{
+@section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
-</body>
-<footer>
-    <div class="footer">
-    <p>Copyright 2014 Forrest Brink</p>
-    <nav>
-        &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "Home")">Home</a>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "About")">About</a>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "Work")">Work</a>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "Contact")">Contact</a>
-            &nbsp;||&nbsp;
-         <a href="@Url.Action("Index", "Careers")">Careers</a>
-            &nbsp;||&nbsp;
-    </nav>
-    </div>
-    
-</footer>
-</html>
-    </div>

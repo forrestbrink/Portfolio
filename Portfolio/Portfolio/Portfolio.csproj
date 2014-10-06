@@ -127,8 +127,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AjaxGETController.cs" />
+    <Compile Include="Controllers\DragonController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\GuessController.cs" />
+    <Compile Include="Controllers\HangmanController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PokerController.cs" />
     <Compile Include="Controllers\WorkController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -227,6 +232,12 @@
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Careers\Index.cshtml" />
+    <Content Include="Views\Dragon\Index.cshtml" />
+    <Content Include="Views\Guess\Index.cshtml" />
+    <Content Include="Views\Hangman\Index.cshtml" />
+    <Content Include="Views\Poker\Index.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Contact\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -14,9 +14,7 @@ namespace Portfolio.Models
     public class ContactValidation
     {
         [Required]
-        public string FirstName { get; set; }
-        [Required]
-        public string LastName { get; set; }
+        public string Name { get; set; }
         [Required]
         [EmailAddress]
         public string EmailAddress { get; set; }
