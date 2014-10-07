@@ -3,166 +3,240 @@
     font-family: Vijaya, Geneva, Verdana, sans-serif, cursive, Verdana, Helvetica, Sans-Serif;
     color: blacck;
     background-color: gray;
-    margin:0px;
-    margin-top:0px;
+    margin: 0px;
+    margin-top: 0px;
     border: 10px solid black;
 }
-a {
-     color:black;
+
+.contacts {
+    text-align: center;
 }
+
+.header2 {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
 .gamenames {
     align-content: center;
+    margin-right: 50px;
 }
-.hangmanpics {
-    margin-left: 250px;
-}
+
 .back {
     margin-left: 75px;
 }
+
 .work {
     display: inline-block;
-    margin-left: 200px;
- 
+    text-align: center;
+    margin-left: 150px;
 }
-.work-entire {
-    background-color: gray
+
+.footer {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
 }
 
 header, footer, nav, section {
-  
     display: block;
     color: black;
     background-color: gray;
 }
+
 .dragon-entire {
     background-color: gray;
     color: black;
 }
+
 .poker-entire {
     background-color: gray;
     color: black;
 }
+
 .guess-entire {
     background-color: gray;
     color: black;
 }
+
 .hangman-entire {
     background-color: gray;
     color: black;
 }
 
 .work-entire {
-     color:black;
-    background-color:gray;
-    margin:0px;
+    color: black;
+    background-color: gray;
+    margin: 0px;
 }
 
 .contactform {
     align-content: center;
     color: black;
     background-color: gray;
-
 }
+
 .about-entire {
     color: black;
     background-color: gray;
+    text-align: center;
 }
+
 .contactheader {
     color: black;
     background-color: gray;
 }
+
 .boxes {
-    display:inline;
-   margin-left: 15px;
-  
-    
+    display: inline;
+    text-align: center;
+}
+
+.details {
+    text-align: center;
 }
 
 .div1 {
-
+    text-align: center;
+    width: 100%;
 }
+
 .div2 {
-    display:inline-block;
-    border:10px solid black;
+    display: inline-block;
+    border: 10px solid black;
     width: 30%;
-    border-style:groove;
-   
- 
+    border-style: groove;
+    text-align: center;
 }
-.div3 {
-     display:inline-block;
-    border:10px solid black;
-    width: 33%;
-    border-style:groove;
-}
-.div4 {
-     display:inline-block;
-   border:10px solid black;
-   width: 30%;
-   border-style:groove;
-}
-.image {
-    display:inline-block;
- 
-}
-.homepage {
 
+.div3 {
+    display: inline-block;
+    border: 10px solid black;
+    width: 33%;
+    border-style: groove;
+    text-align: center;
+}
+
+.div4 {
+    display: inline-block;
+    border: 10px solid black;
+    width: 30%;
+    border-style: groove;
+    text-align: center;
+}
+
+.image {
+    display: inline-block;
+}
+
+.homepage {
     background-color: gray;
     color: black;
 }
-.homepage-entire{
-        background-color: gray;
-        color:black;
+
+.homepage-entire {
+    background-color: gray;
+    color: black;
+    text-align: center;
 }
+
 .hide {
     display: none;
 }
-.image-next{
+
+.image-next {
     cursor: pointer;
     border: 5px solid black;
-    background-color: white;
-    color: black;
-    width: 75px;
-   font-size:24px;
-   margin-left:200px;
-
-
+    background-color: black;
+    color: white;
+    width: 25px;
+    font-size: 24px;
 }
-.image1-next{
+
+.image1-next {
     cursor: pointer;
     border: 5px solid black;
-    background-color: white;
-    color: black;
-    width: 75px;
-   font-size:24px;
-   margin-left:200px;
-
-
+    background-color: black;
+    color: white;
+    width: 25px;
+    font-size: 24px;
 }
+
 .image2-next {
     cursor: pointer;
     border: 5px solid black;
-    background-color: white;
-    color: black;
-    width: 75px;
+    background-color: black;
+    color: white;
+    width: 25px;
     font-size: 24px;
-    margin-left: 200px;
 }
+
 .image3-next {
     cursor: pointer;
     border: 5px solid black;
-    background-color: white;
-    color: black;
-    width: 75px;
+    background-color: black;
+    color: white;
+    width: 25px;
     font-size: 24px;
-    margin-left: 200px;
+}
+
+.image-prev {
+    cursor: pointer;
+    border: 5px solid black;
+    background-color: black;
+    color: white;
+    width: 25px;
+    font-size: 24px;
+}
+
+.image1-prev {
+    cursor: pointer;
+    border: 5px solid black;
+    background-color: black;
+    color: white;
+    width: 25px;
+    font-size: 24px;
+}
+
+.image2-prev {
+    cursor: pointer;
+    border: 5px solid black;
+    background-color: black;
+    color: white;
+    width: 25px;
+    font-size: 24px;
+}
+
+.image3-prev {
+    cursor: pointer;
+    border: 5px solid black;
+    background-color: black;
+    color: white;
+    width: 25px;
+    font-size: 24px;
+}
+
+.thankyou {
+    text-align: center;
+}
+
+.hangmanpics {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
 }
 
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
 fieldset {
- 
     padding: 0 1.4em 1.4em 1.4em;
     margin: 0 0 1.5em 0;
 }
@@ -208,8 +282,7 @@ textarea {
 .validation-summary-valid {
     display: none;
 }
+
 .ajax-get {
-    color:fuchsia;
+    color: fuchsia;
 }
-
-

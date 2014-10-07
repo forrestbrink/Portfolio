@@ -11,7 +11,16 @@ $(document).ready(function () {
             }
             activeSlide.removeClass('active').addClass('hide');
             nextSlide.removeClass('hide').addClass('active');
-    });
+        });
+        $('.image-prev').on('click', function () {
+            var activeSlide = $(this).parent().find('.image.active');
+            var nextSlide = activeSlide.prev();
+            if (!nextSlide.hasClass('image')) {
+                nextSlide = $(this).parent().find('.image').last();
+            }
+            activeSlide.removeClass('active').addClass('hide');
+            nextSlide.removeClass('hide').addClass('active');
+        });
 });
 $(document).ready(function () {
 
@@ -22,6 +31,15 @@ $(document).ready(function () {
         if (!nextSlide.hasClass('hide')) {
 
             nextSlide = $('.active1').first();
+        }
+        activeSlide.removeClass('active1').addClass('hide');
+        nextSlide.removeClass('hide').addClass('active1');
+    });
+    $('.image1-prev').on('click', function () {
+        var activeSlide = $(this).parent().find('.image.active1');
+        var nextSlide = activeSlide.prev();
+        if (!nextSlide.hasClass('image')) {
+            nextSlide = $(this).parent().find('.image').last();
         }
         activeSlide.removeClass('active1').addClass('hide');
         nextSlide.removeClass('hide').addClass('active1');
@@ -40,6 +58,15 @@ $(document).ready(function () {
         activeSlide.removeClass('active2').addClass('hide');
         nextSlide.removeClass('hide').addClass('active2');
     });
+    $('.image2-prev').on('click', function () {
+        var activeSlide = $(this).parent().find('.image.active2');
+        var nextSlide = activeSlide.prev();
+        if (!nextSlide.hasClass('image')) {
+            nextSlide = $(this).parent().find('.image').last();
+        }
+        activeSlide.removeClass('active2').addClass('hide');
+        nextSlide.removeClass('hide').addClass('active2');
+    });
 });
 $(document).ready(function () {
 
@@ -54,15 +81,25 @@ $(document).ready(function () {
         activeSlide.removeClass('active3').addClass('hide');
         nextSlide.removeClass('hide').addClass('active3');
     });
-    $('#content').on('click', '.ajax-get', function () {
-        //get the url to GET from the data-url attribute
+    $('.image3-prev').on('click', function () {
+        var activeSlide = $(this).parent().find('.image.active3');
+        var nextSlide = activeSlide.prev();
+        if (!nextSlide.hasClass('image')) {
+            nextSlide = $(this).parent().find('.image').last();
+        }
+        activeSlide.removeClass('active3').addClass('hide');
+        nextSlide.removeClass('hide').addClass('active3');
+    });
+
+
+
+    $('body').on('click', '.ajax-get', function () {
         var urlRequest = $(this).data('url');
-        //make the AJAX request
+        //Make the AJAX request
         $.get(urlRequest, function (data) {
             $('#content').html(data);
         });
     });
-
     $('#contactForm').on('submit', function (event) {
         //Prevent default form behavior (Doesn't allow it to be submitted)
         event.preventDefault();

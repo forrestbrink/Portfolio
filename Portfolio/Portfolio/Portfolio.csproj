@@ -231,7 +231,6 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
-    <Content Include="Views\Careers\Index.cshtml" />
     <Content Include="Views\Dragon\Index.cshtml" />
     <Content Include="Views\Guess\Index.cshtml" />
     <Content Include="Views\Hangman\Index.cshtml" />

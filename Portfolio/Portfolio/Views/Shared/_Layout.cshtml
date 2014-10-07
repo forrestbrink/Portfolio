@@ -1,48 +1,115 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+
     <title>@ViewBag.Title</title>
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
+<body>
+    <div class="header">
+        <header>
+            <h1>Forrest Brink</h1>
+            <nav>
+
+                <a href="@Url.Action("Index", "Home")">Home</a>
+                &nbsp || &nbsp
+             <a href="@Url.Action("Index", "About")">About</a>
+                &nbsp || &nbsp
+             <a href="@Url.Action("Index", "Work")">Work</a>
+                &nbsp || &nbsp
+             <a href="@Url.Action("Index", "Contact")">Contact</a>
+
+            </nav>
+    </div>
+    </header>
+     <div id="body">
+         @RenderSection("featured", required: false)
+         <section id="container" class="content-wrapper main-content clear-fix">
+             @RenderBody()
+         </section>
+     </div>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <footer>
+        <div class="footer">
+            <p>© 2014 Forrest Brink</p>
+            <nav>
+
+                <a href="@Url.Action("Index", "Home")">Home</a>
+                &nbsp || &nbsp
+            <a href="@Url.Action("Index", "About")">About</a>
+                &nbsp || &nbsp
+            <a href="@Url.Action("Index", "Work")">Work</a>
+                &nbsp || &nbsp
+            <a href="@Url.Action("Index", "Contact")">Contact</a>
+
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+
+@*<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
     <header>
         <div class="header">
-        <h1>Forrest's Page</h1>
-        <nav>
-            &nbsp;||&nbsp;
+            <h1>Forrest Brink</h1>
+            <nav>
+                &nbsp;||&nbsp;
             <a href="@Url.Action("Index", "Home")">Home</a>
-            &nbsp;||&nbsp;
+                &nbsp;||&nbsp;
             <a href="@Url.Action("Index", "About")">About</a>
-            &nbsp;||&nbsp;
+                &nbsp;||&nbsp;
             <a href="@Url.Action("Index", "Work")">Work</a>
-            &nbsp;||&nbsp;
+                &nbsp;||&nbsp;
             <a href="@Url.Action("Index", "Contact")">Contact</a>
-            &nbsp;||&nbsp;
-        </nav>
+                &nbsp;||&nbsp;
+            </nav>
+        </div>
+        <div class="content-wrapper">
+          
+           
+                
+            </div>
         </div>
     </header>
-<body>    
-    @RenderBody()
+    <div id="body">
+        @RenderSection("featured", required: false)
+        <section id="container" class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Copyright 2014 Forrest Brink</p>
+            <nav>
+                &nbsp;||&nbsp;
+            <a href="@Url.Action("Index", "Home")">Home</a>
+                &nbsp;||&nbsp;
+            <a href="@Url.Action("Index", "About")">About</a>
+                &nbsp;||&nbsp;
+            <a href="@Url.Action("Index", "Work")">Work</a>
+                &nbsp;||&nbsp;
+            <a href="@Url.Action("Index", "Contact")">Contact</a>
+                &nbsp;||&nbsp;
+            </nav>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>
-<footer>
-    <div class="footer">
-    <p>Copyright 2014 Forrest Brink</p>
-    <nav>
-        &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "Home")">Home</a>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "About")">About</a>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "Work")">Work</a>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "Contact")">Contact</a>
-            &nbsp;||&nbsp;
-    </nav>
-    </div>
-</footer>
-</html>
+</html>*@
