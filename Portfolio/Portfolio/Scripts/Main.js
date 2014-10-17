@@ -1,36 +1,34 @@
-﻿//load the DOM into jQueryy
-$(document).ready(function () {
-  
-        $('.image-next').on('click', function () {
-            var activeSlide = $('.active');
-            var nextSlide = activeSlide.next();
-            //make sure its a carousel slide
-            if (!nextSlide.hasClass('hide')) {
-              
-                nextSlide = $('.active').first();
-            }
-            activeSlide.removeClass('active').addClass('hide');
-            nextSlide.removeClass('hide').addClass('active');
-        });
-        $('.image-prev').on('click', function () {
-            var activeSlide = $(this).parent().find('.image.active');
-            var nextSlide = activeSlide.prev();
-            if (!nextSlide.hasClass('image')) {
-                nextSlide = $(this).parent().find('.image').last();
-            }
-            activeSlide.removeClass('active').addClass('hide');
-            nextSlide.removeClass('hide').addClass('active');
-        });
-});
+﻿//load the DOM into jQuery
 $(document).ready(function () {
 
-    $('.image1-next').on('click', function () {
-        var activeSlide = $('.active1');
+    $('.image-next').on('click', function () {
+        var activeSlide = $('.active');
         var nextSlide = activeSlide.next();
         //make sure its a carousel slide
         if (!nextSlide.hasClass('hide')) {
 
-            nextSlide = $('.active1').first();
+            nextSlide = $('.active').first();
+        }
+        activeSlide.removeClass('active').addClass('hide');
+        nextSlide.removeClass('hide').addClass('active');
+    });
+    $('.image-prev').on('click', function () {
+        var activeSlide = $(this).parent().find('.image.active');
+        var nextSlide = activeSlide.prev();
+        if (!nextSlide.hasClass('image')) {
+            nextSlide = $(this).parent().find('.image').last();
+        }
+        activeSlide.removeClass('active').addClass('hide');
+        nextSlide.removeClass('hide').addClass('active');
+    });
+});
+$(document).ready(function () {
+
+    $('.image1-next').on('click', function () {
+        var activeSlide = $(this).parent().find('.image.active1');
+        var nextSlide = activeSlide.next();
+        if (!nextSlide.hasClass('image')) {
+            nextSlide = $(this).parent().find('.image').last();
         }
         activeSlide.removeClass('active1').addClass('hide');
         nextSlide.removeClass('hide').addClass('active1');

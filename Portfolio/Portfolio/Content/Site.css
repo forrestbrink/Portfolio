@@ -2,287 +2,360 @@
     font-size: 1.25em;
     font-family: Vijaya, Geneva, Verdana, sans-serif, cursive, Verdana, Helvetica, Sans-Serif;
     color: black;
-    background-color: gray;
+    background-color: silver;
     margin: 0px;
     margin-top: 0px;
     border: 10px solid black;
 }
 
+h2 {
+    font-family: 'Times New Roman';
+    font-size: x-large;
+}
+h1 {
+    font-family: 'Times New Roman';
+    text-shadow: 3px 2px 1px white;
+}
+h1 span {
+        font-size: 80px;
+        font-weight: bolder;
+    }
+h2 {
+    font-family: 'Times New Roman';
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+}
+.thanks {
+    font-family: 'Times New Roman';
+    text-shadow: 2px 2px 2px white;
+}
+.aboutpic {
+    text-align: center;
+}
+.piclink:hover {
+    width: 250px;
+    height: 250px;
+}
+legend {
+    font-family: 'Times New Roman';
+    font-size: x-large;
+}
+.xbutton:hover {
+    width: 5%;
+    height: 5%;
+}
 .contacts {
     text-align: center;
 }
-
 .header2 {
     text-align: center;
 }
-
 a {
     color: black;
 }
-
+a:hover {
+        color: gray;
+}
 .gamenames {
     align-content: center;
     margin-right: 50px;
 }
-
 .back {
     margin-left: 75px;
 }
-
 .work {
     display: inline-block;
     text-align: center;
     margin-left: 150px;
 }
-
 .footer {
     text-align: center;
 }
-
 .header {
     text-align: center;
 }
-
 header, footer, nav, section {
     display: block;
     color: black;
-    background-color: gray;
+    background-color: silver;
 }
-
 .dragon-entire {
-    background-color: gray;
+    background-color: silver;
     color: black;
 }
-
 .poker-entire {
-    background-color: gray;
+    background-color: silver;
     color: black;
 }
-
 .guess-entire {
-    background-color: gray;
+    background-color: silver;
     color: black;
 }
-
 .hangman-entire {
-    background-color: gray;
+    background-color: silver;
     color: black;
 }
-
 .work-entire {
     color: black;
-    background-color: gray;
+    background-color: silver;
     margin: 0px;
 }
-
 .contactform {
     align-content: center;
     color: black;
-    background-color: gray;
+    background-color: silver;
 }
-
 .about-entire {
     color: black;
-    background-color: gray;
+    background-color: silver;
     text-align: center;
 }
-
 .contactheader {
     color: black;
-    background-color: gray;
+    background-color: silver;
 }
-
 .boxes {
     display: inline;
     text-align: center;
 }
-
 .details {
     text-align: center;
 }
-
 .div1 {
     text-align: center;
     width: 100%;
 }
-
 .div2 {
     display: inline-block;
-    border: 10px solid black;
+    border: 10px solid gray;
     width: 30%;
     border-style: groove;
     text-align: center;
 }
-
 .div3 {
     display: inline-block;
-    border: 10px solid black;
+    border: 10px solid gray;
     width: 33%;
     border-style: groove;
     text-align: center;
 }
-
 .div4 {
     display: inline-block;
-    border: 10px solid black;
+    border: 10px solid gray;
     width: 30%;
     border-style: groove;
     text-align: center;
 }
-
 .image {
     display: inline-block;
 }
-
 .homepage {
-    background-color: gray;
+    background-color: silver;
     color: black;
 }
-
 .homepage-entire {
-    background-color: gray;
+    background-color: silver;
     color: black;
     text-align: center;
 }
-
 .hide {
     display: none;
 }
-
 .image-next {
-    cursor: pointer;
-    border: 5px solid black;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
     background-color: black;
-    color: white;
-    width: 25px;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    font-weight: bold;
 }
-
 .image1-next {
-    cursor: pointer;
-    border: 5px solid black;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
     background-color: black;
-    color: white;
-    width: 25px;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    font-weight: bold;
 }
-
 .image2-next {
-    cursor: pointer;
-    border: 5px solid black;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
     background-color: black;
-    color: white;
-    width: 25px;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    font-weight: bold;
 }
-
 .image3-next {
-    cursor: pointer;
-    border: 5px solid black;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
     background-color: black;
-    color: white;
-    width: 25px;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    font-weight: bold;
 }
-
 .image-prev {
-    cursor: pointer;
-    border: 5px solid black;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
     background-color: black;
-    color: white;
-    width: 25px;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    font-weight: bold;
 }
-
 .image1-prev {
-    cursor: pointer;
-    border: 5px solid black;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
     background-color: black;
-    color: white;
-    width: 25px;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    font-weight: bold;
 }
-
 .image2-prev {
-    cursor: pointer;
-    border: 5px solid black;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
     background-color: black;
-    color: white;
-    width: 25px;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    font-weight: bold;
 }
-
 .image3-prev {
-    cursor: pointer;
-    border: 5px solid black;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
     background-color: black;
-    color: white;
-    width: 25px;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    cursor: pointer;
+    font-weight: bold;
 }
-
+.image-prev:hover {
+    color: gray;
+}
+.image1-prev:hover {
+    color: gray;
+}
+.image2-prev:hover {
+    color: gray;
+}
+.image3-prev:hover {
+    color: gray;
+}
+.image-next:hover {
+    color: gray;
+}
+.image1-next:hover {
+    color: gray;
+}
+.image2-next:hover {
+    color: gray;
+}
+.image3-next:hover {
+    color: gray;
+}
 .thankyou {
     text-align: center;
 }
-
 .hangmanpics {
     text-align: center;
 }
-
 .button {
     display: inline-block;
 }
-
-
 /* Styles for basic forms
 -----------------------------------------------------------*/
 fieldset {
     padding: 0 1.4em 1.4em 1.4em;
     margin: 0 0 1.5em 0;
-}
 
+}
 legend {
     font-size: 1.2em;
     font-weight: bold;
 }
-
 textarea {
     min-height: 75px;
 }
-
 .editor-label {
     margin: 1em 0 0 0;
 }
-
 .editor-field {
     margin: 0.5em 0 0 0;
 }
-
-
 /* Styles for validation helpers
 -----------------------------------------------------------*/
 .field-validation-error {
     color: #f00;
 }
-
 .field-validation-valid {
     display: none;
 }
-
 .input-validation-error {
     border: 1px solid #f00;
     background-color: #fee;
 }
-
 .validation-summary-errors {
     font-weight: bold;
     color: #f00;
 }
-
 .validation-summary-valid {
     display: none;
 }
-
 .ajax-get {
     color: fuchsia;
+}
+nav a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    box-shadow: 0px 0px 1px black;
+    font-family: 'Times New Roman';
+    padding: 0 25px;
+    line-height: 1.8em;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px rgba(255,255,255,0.4);
+    text-decoration: none;
+    color: black;
+    background: black;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.5))), white;
+    background-image: -moz-linear-gradient(top, black 0%, #000000 120%);
+    background-image: -ms-linear-gradient(top, black 0%, #000000 120%);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+nav a:hover {
+    padding: 0 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0px 0px 1px rgba(255,255,255,0.8);
+    background: black;
 }

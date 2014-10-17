@@ -3,15 +3,14 @@
 @{
     ViewBag.Title = "Contact Form";
 }
-<div class="header2">
-    <h2>Contact Me</h2>
-</div>
+<br />
+<h2>Contact Me</h2>
 <form id="contactForm" action="@Url.Action("Index", "Contact")" method="post">
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
     <div class="contacts">
         <fieldset>
-            <legend>Contact Form</legend>
+
 
             <div class="editor-label">
                 @Html.LabelFor(model => model.Name)

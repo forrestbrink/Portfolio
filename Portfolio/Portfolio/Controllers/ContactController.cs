@@ -1,10 +1,10 @@
 ﻿﻿using System;
- using System.Collections.Generic;
- using System.Linq;
- using System.Web;
- using System.Web.Mvc;
- using System.Net.Mail;
- using System.Text;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.Net.Mail;
+using System.Text;
 
 namespace jQueryPractice.Controllers
 {
@@ -22,7 +22,7 @@ namespace jQueryPractice.Controllers
             MailMessage message = new MailMessage("theRobots@seedpaths.com", "forrestmbrink@gmail.com");
 
             //Step 3. Set the subject
-            message.Subject = "You have a request from: "  + contact.Name;
+            message.Subject = "You have a request from: " + contact.Name;
 
             //Step 4. Build the body w/ a string builder
             StringBuilder sb = new StringBuilder();
